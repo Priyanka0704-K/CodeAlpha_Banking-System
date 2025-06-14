@@ -11,7 +11,7 @@ public:
         time_t now = time(0);
         return string(ctime(&now));
     }
-    Transaction(string t, double a) : type(t), amount(a) 
+    Transaction(string t, double a) : type(t), amount(a) {
     void show() { cout << getTime() << " - " << type << ": $" << amount << endl; 
 }
 };
